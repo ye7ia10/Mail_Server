@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="648.0" prefWidth="365.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MaintwoController">
+   <children>
+      <AnchorPane prefHeight="38.0" prefWidth="365.0" style="-fx-background-color: #00BFFF;">
+         <children>
+            <Label fx:id="label" layoutX="346.0" layoutY="9.0" onMouseClicked="#handclose" text="X">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="6.0" text="Sign up ">
+               <font>
+                  <Font name="Lucida Sans Unicode" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="min" layoutX="324.0" layoutY="6.0" onMouseClicked="#Mini" text="-">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="38.0" prefHeight="669.0" prefWidth="365.0" style="-fx-background-color: #F0FFF0;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="108.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/email.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="First" focusColor="#57b2c2" layoutX="69.0" layoutY="226.0" maxWidth="248.0" minWidth="198.0" prefHeight="37.0" prefWidth="248.0" promptText="First name">
+               <font>
+                  <Font size="15.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="Last" focusColor="#57b2c2" layoutX="68.0" layoutY="274.0" maxWidth="248.0" minWidth="198.0" prefHeight="37.0" prefWidth="248.0" promptText="Last name">
+               <font>
+                  <Font size="15.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="mail" focusColor="#57b2c2" layoutX="68.0" layoutY="323.0" maxWidth="248.0" minWidth="198.0" prefHeight="37.0" prefWidth="248.0" promptText="Email">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton layoutX="125.0" layoutY="576.0" onAction="#make" prefHeight="45.0" prefWidth="115.0" style="-fx-background-color: #009ACD;" text="Sign up" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXPasswordField fx:id="pass" focusColor="#57b2c2" layoutX="69.0" layoutY="373.0" maxWidth="248.0" minWidth="229.0" prefHeight="37.0" prefWidth="248.0" promptText="Password">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXPasswordField fx:id="repass" focusColor="#57b2c2" layoutX="69.0" layoutY="421.0" maxWidth="248.0" minWidth="229.0" prefHeight="37.0" prefWidth="248.0" promptText="Confim Password">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXPasswordField>
+            <ImageView fitHeight="21.0" fitWidth="25.0" layoutX="44.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/pel.png" />
+               </image></ImageView>
+            <ImageView fitHeight="21.0" fitWidth="25.0" layoutX="44.0" layoutY="331.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Email%20(1).png" />
+               </image></ImageView>
+            <ImageView fitHeight="21.0" fitWidth="25.0" layoutX="44.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/blue.png" />
+               </image></ImageView>
+            <ImageView fitHeight="21.0" fitWidth="25.0" layoutX="44.0" layoutY="381.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/pass.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="25.0" layoutX="44.0" layoutY="429.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/repass.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="78.0" layoutY="475.0" prefHeight="17.0" prefWidth="210.0" text="If you have another e-mail type it :" underline="true" />
+            <JFXTextField fx:id="exist" layoutX="71.0" layoutY="503.0" maxWidth="248.0" minWidth="248.0" prefHeight="31.0" prefWidth="248.0" promptText="your e-mail">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXTextField>
+            <FontAwesomeIconView fill="#1cb0b5" layoutX="46.0" layoutY="539.0" size="16.0" wrappingWidth="21.00000786781311" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-247.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

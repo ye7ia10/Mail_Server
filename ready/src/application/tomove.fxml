@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.tomoveController">
+   <children>
+      <Pane layoutX="-1.0" opacity="0.76" prefHeight="40.0" prefWidth="506.0" style="-fx-background-color: blue;">
+         <children>
+            <Label layoutX="477.0" layoutY="4.0" onMouseClicked="#handclose" text="X" textFill="#fff8f8">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="454.0" layoutY="4.0" onMouseClicked="#Mini" text="-" textFill="#fff8f8">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fitHeight="434.0" fitWidth="506.0" layoutY="40.0" pickOnBounds="true">
+         <image>
+            <Image url="@images/compose.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="200.0" layoutY="52.0" onAction="#drafts" prefHeight="47.0" prefWidth="107.0" style="-fx-background-color: #EEA2AD;" text="Drafts" textFill="#141313" />
+      <JFXButton layoutX="200.0" layoutY="118.0" prefHeight="47.0" prefWidth="107.0" style="-fx-background-color: #EEA2AD;" text="Sent Mails" textFill="#141313" />
+      <JFXButton layoutX="200.0" layoutY="182.0" prefHeight="47.0" prefWidth="107.0" style="-fx-background-color: #EEA2AD;" text="Inbox" textFill="#141313" />
+      <JFXButton layoutX="200.0" layoutY="250.0" prefHeight="47.0" prefWidth="107.0" style="-fx-background-color: #EEA2AD;" text="Trash" textFill="#141313" />
+      <Label layoutX="224.0" layoutY="308.0" prefHeight="32.0" prefWidth="117.0" text=" Filters" underline="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="200.0" layoutY="354.0" prefHeight="47.0" prefWidth="107.0" style="-fx-background-color: #EEA2AD;" text="name" textFill="#141313" />
+      <JFXButton layoutX="200.0" layoutY="413.0" prefHeight="47.0" prefWidth="107.0" style="-fx-background-color: #EEA2AD;" text="sub" textFill="#141313" />
+   </children>
+</AnchorPane>

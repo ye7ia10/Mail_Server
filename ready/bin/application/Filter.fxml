@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="579.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FilterController">
+   <children>
+      <ImageView fitHeight="579.0" fitWidth="500.0" opacity="0.76" pickOnBounds="true">
+         <image>
+            <Image url="@images/back.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="474.0" layoutY="8.0" onMouseClicked="#handclose" text="X">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="451.0" layoutY="2.0" onContextMenuRequested="#Mini" prefHeight="30.0" prefWidth="12.0" text="-">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="combo" layoutX="14.0" layoutY="105.0" prefHeight="30.0" prefWidth="93.0" promptText="Filters" style="-fx-background-color: white;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <JFXTextField fx:id="k" layoutX="144.0" layoutY="98.0" maxWidth="149.0" minWidth="149.0" prefHeight="35.0" prefWidth="149.0" promptText="Filter name" unFocusColor="#433131">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="338.0" layoutY="105.0" onAction="#write" prefHeight="30.0" prefWidth="52.0" style="-fx-background-color: red;" text="OK" />
+      <Label layoutX="11.0" layoutY="164.0" text="Show Filters :" textFill="#fff7f7">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="38.0" prefHeight="17.0" prefWidth="218.0" text="Filter next mails :" textFill="#f5ecec">
+         <font>
+            <Font name="Webdings" size="24.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="combo1" layoutX="14.0" layoutY="221.0" prefHeight="30.0" prefWidth="93.0" promptText="Filters" style="-fx-background-color: white;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <JFXTextField fx:id="ku" layoutX="144.0" layoutY="206.0" maxWidth="149.0" minWidth="149.0" prefHeight="35.0" prefWidth="149.0" promptText="Filter name" unFocusColor="#433131">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="338.0" layoutY="221.0" onAction="#showFiltres" prefHeight="30.0" prefWidth="52.0" style="-fx-background-color: red;" text="Show" />
+      <JFXListView fx:id="l" layoutX="-1.0" layoutY="278.0" onMouseClicked="#showMessage" opacity="0.67" prefHeight="301.0" prefWidth="500.0" />
+   </children>
+</AnchorPane>

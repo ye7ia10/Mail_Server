@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="402.0" prefWidth="501.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.sendController">
+   <children>
+      <Pane prefHeight="40.0" prefWidth="501.0" style="-fx-background-color: #3A5FCD;">
+         <children>
+            <ImageView fitHeight="29.0" fitWidth="42.0" layoutX="29.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/cc.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="73.0" layoutY="6.0" text="Compose" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="exit" layoutX="474.0" layoutY="4.0" onMouseClicked="#handclose" text="X" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="min" layoutX="444.0" onMouseClicked="#Mini" prefHeight="29.0" prefWidth="12.0" text="-" textFill="WHITE">
+               <font>
+                  <Font size="29.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="355.0" prefHeight="47.0" prefWidth="501.0" style="-fx-background-color: #3A5FCD;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="9.0" onAction="#send" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: #B0171F;" text="Send" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="107.0" layoutY="8.0" onAction="#shoe" prefHeight="31.0" prefWidth="87.0" style="-fx-background-color: #DC143C;" text="Attach" textFill="#fffdfd">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/Attachment.png" />
+                     </image></ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="289.0" layoutY="9.0" prefHeight="30.0" prefWidth="94.0" style="-fx-background-color: #3A5FCD;" text="Importance :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="combo" layoutX="399.0" layoutY="11.0" style="-fx-text-fill: white;" />
+         </children>
+      </Pane>
+      <Pane layoutY="40.0" prefHeight="43.0" prefWidth="501.0" style="-fx-background-color: #B0C4DE;">
+         <children>
+            <Label layoutX="14.0" layoutY="8.0" prefHeight="32.0" prefWidth="32.0" text="TO :">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="to" layoutX="81.0" layoutY="6.0" maxWidth="214.0" minWidth="149.0" prefHeight="32.0" prefWidth="214.0" promptText="Email  " style="-fx-text-fill: black;" />
+            <Label layoutX="333.0" layoutY="7.0" prefHeight="29.0" prefWidth="146.0" text="put ( , ) between names to &#10;send to more tha one email" textFill="#8a8888">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="83.0" opacity="0.77" prefHeight="43.0" prefWidth="501.0" style="-fx-background-color: #BCD2EE;">
+         <children>
+            <Label layoutX="14.0" layoutY="5.0" prefHeight="32.0" prefWidth="66.0" text="Subject :">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="sub" layoutX="80.0" layoutY="-1.0" maxWidth="214.0" minWidth="214.0" prefHeight="31.0" prefWidth="214.0" promptText="subject" style="-fx-text-fill: black;" />
+         </children>
+      </Pane>
+      <JFXTextArea fx:id="mes" layoutY="126.0" maxWidth="501.0" minWidth="501.0" prefHeight="228.0" prefWidth="501.0" promptText="Enter your massege here . . . . .">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextArea>
+   </children>
+</AnchorPane>
